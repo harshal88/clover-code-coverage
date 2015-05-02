@@ -1,0 +1,122 @@
+1) Check that password edit text exist and "Password" hint is in edit text
+2) Check that "Login" button exist
+3) Check that "Register" button exist
+3) Check that "Forget Password!" label exist
+4) Check that "Smart Health Care" label and correspondent icon exist in action bar
+5) Check that "Login" button clickable
+6) Check that "Register" button clickable
+
+Functional tests
+7) Purpose
+		Test negative\wrong values handling of the "Password" field (edit text)
+	
+	7.1 Actions
+		Enter "_notExistedPassword_" in password edit text
+		Press "Login" button
+	Result 
+		"Password incorrect" toast message appear
+		
+	7.2 Actions
+		Enter 10 unusual symbols
+		Press "Login" button
+	Result
+		"Password incorrect" toast message appear
+		
+	7.3 Actions
+		Leave edit text empty
+		Press "Login" button
+	Result
+		"Please, enter your password" toast message appear	
+
+8) Purpose
+		Test "Register" button functionality		
+		
+	8.1 Actions
+		Press "Register" button
+	Result
+		Register activity launched
+		
+9) Purpose
+		Test "Forget password" functionality
+		
+	9.1.1 Check "Enter security Hint" label exist
+	9.1.2 Check "Your password" label exist
+	9.1.3 Check "Hint" edit text exist and "Enter password hint" hint is in edit text
+	9.1.4 Check "Get password" button exist
+	9.1.5 Check "Cancel" button exist
+	9.1.6 Check "Get password" button clickable
+	9.1.7 Check "Cancel" button clickable		
+		
+	9.1 Actions		
+		Press "Forget password" label
+	Result 
+		Password recovery dialogue appear
+		
+	9.2 Actions				
+		Press "Get Password" button
+	Result 
+		"Please, enter your security hint" toast message appear	
+
+	9.3 Actions				
+		Press "Cancel" button
+	Result 
+		Dialogue disappear
+		
+	9.4 Actions		
+		Press "Forget password" label
+	Result 
+		Password recovery dialogue appear
+		
+	9.5 Actions
+		Enter "_notExistedHint_" in hint edit text
+		Press "Get Password" button
+	Result 
+		"Please, enter correct security hint" toast message appear	
+		
+	9.6 Actions
+		Enter 10 unusual symbols
+		Press "Get Password" button
+	Result
+		"Please, enter correct security hint" toast message appear	
+		
+	9.7 Actions
+		Enter correct hint in hint edit text
+		Press "Get Password" button
+	Result
+		Password appear under "Your password" label
+		
+	9.8 Actions
+		Enter incorrect hint in hint edit text
+		Press "Get Password" button
+	Result
+		Password under "Your password" label disappear
+		
+	9.9 Actions				
+		Press "Cancel" button
+	Result 
+		Dialogue disappear
+		
+	9.10 Actions		
+		Press "Forget password" label
+	Result 
+		Password recovery dialogue appear, edit text hint is "Hint" and there is no password under "Your password" label
+				
+10) Purpose
+		Test "Login" button functionality
+		
+	10.1 Actions
+		Enter correct password in "Password" edit text
+		Press "Login" button
+	Result
+		Home activity launched
+		"Congrats, login successful" toast appear
+
+11) Purpose
+		Check auto-login after successful login
+		
+	11.1 Action
+		Close and run app
+	Result
+		Splash screen launched, waited 5 seconds
+		Home activity launched
+		"Congrats, login successful" toast appear

@@ -1,0 +1,32 @@
+Purpose 
+Check, that StopWatch fragment is working correctly
+
+1. Check, how working Start, Pause, New Lap and Stop functionality
+1.1 Actions
+- Press "Start" Image Button;
+- Wait for 3 seconds;
+- Press "Pause" Image Button;
+Result
+- Chronometer seconds part mast equal "03" 
+
+1.2 Actions
+- Press "Start" Image Button;
+- Wait for 4 seconds;
+- Press "Pause" Image Button;
+Result
+- Chronometer seconds part mast equal "07" 
+
+1.3 Actions
+- Press "Start" Image Button;
+- Wait for 2 seconds;
+- Press "New Lap" ("Start") Image Button;
+Result
+- New Laps list must contain "09" 
+
+1.4 Actions
+- Wait for 1 seconds;
+- Press "Stop" Image Button;
+- Wait for 1 seconds;
+- Press "Stop" Image Button;
+Result
+- Chronometer seconds part mast equal "00" 

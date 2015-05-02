@@ -1,0 +1,4 @@
+1) Check that activity appear
+2) Check that animation is showed
+3) Check bottom text appear. Check text correspondence
+4) Check top text appear. Check text correspondence 

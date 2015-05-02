@@ -1,0 +1,92 @@
+Purpose 
+Check, that Application Navigation is working correctly 
+
+1. Check, how working opening of Navigation Drawer by clicking on Action Bar left edge.
+Actions
+- Open Navigation Drawer by clicking on Action Bar left edge.
+- Select BMI Item;
+Result
+- BMI fragment must be opened
+
+2. Check, how working opening of Navigation Drawer by by sliding from "left to right"
+Actions
+- Open Navigation Drawer by sliding from "left to right".
+- Select "BMI" Item;
+Result
+- BMI fragment must be opened
+
+3. Check, that Home item of Navigation Drawer is working correctly.
+Actions
+- Open HomeActivity;
+- Open BMI fragment;
+- Open Navigation Drawer;
+- Select Home Item;
+Result
+- Home Activity must be opened
+
+4. Check, that ListTrack item of Navigation Drawer and "Back" on ListTrack fragment are working correctly.
+Actions
+- Open HomeActivity;
+- Open Navigation Drawer;
+- Select Home Item;
+Result
+- ListTrack fragment must be opened
+Actions
+- Press "Back";
+Result
+- Home Activity must be opened
+
+5. Check, that Graphs item of Navigation Drawer and "Back" on Graphs fragment are working correctly.
+Actions
+- Open HomeActivity;
+- Open Navigation Drawer;
+- Select Graphs Item;
+Result
+- Graphs fragment must be opened
+Actions
+- Press "Back";
+Result
+- Home Activity must be opened
+
+6. Check, that Compass item of Navigation Drawer and "Back" on Compass fragment are working correctly.
+Actions
+- Open HomeActivity;
+- Open Navigation Drawer;
+- Select Compass Item;
+Result
+- Compass fragment must be opened
+Actions
+- Press "Back";
+Result
+- Home Activity must be opened
+
+7. Check, that StopWatch item of Navigation Drawer and "Back" on StopWatch fragment are working correctly.
+Actions
+- Open HomeActivity;
+- Open Navigation Drawer;
+- Select StopWatch Item;
+Result
+- StopWatch fragment must be opened
+Actions
+- Press "Back";
+Result
+- Home Activity must be opened
+
+8. Check, that BMI item of Navigation Drawer and "Back" on BMI fragment are working correctly.
+Actions
+- Open HomeActivity;
+- Open Navigation Drawer;
+- Select BMI Item;
+Result
+- BMI fragment must be opened
+Actions
+- Press "Back";
+Result
+- Home Activity must be opened
+
+9. Check, that "Exit" toast appearing, when user press "Back" on HomeActivity
+Actions
+- Open HomeActivity;
+- Press "Back";
+Result
+- Toast message with "Please click BACK again to exit" correspondence;

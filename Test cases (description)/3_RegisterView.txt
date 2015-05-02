@@ -1,0 +1,57 @@
+1) Check that password edit text exist and "Password" hint is in edit text
+2) Check that verify password edit text exist and "Verify password" hint is in edit text
+3) Check that security hint edit text exist and "Security Hint" hint is in edit text
+5) Check that show me password check box exist and "Show me password" hint is in edit text
+6) Check that "Register" button exist
+7) Check that "Register" button clickable
+
+Functional tests
+8) Purpose
+		Test negative\wrong values handling of the "Password", "Verify password" and "Security hint" fields (edit text)
+	
+	8.1 Actions
+		Press "Register button"
+	Result 
+		"Please, fill all fields" toast message appear	
+		
+	8.2 Actions
+		Fill password field with value "1"
+		Press "Register button"
+	Result 
+		"Please, fill all fields" toast message appear	
+
+	8.3 Actions
+		Fill verify password field with value "2"
+		Press "Register button"
+	Result 
+		"Please, fill all fields" toast message appear	
+
+	8.4 Actions
+		Fill security hint field with value "3"
+		Press "Register button"
+	Result 
+		"Passwords does not match" toast message appear			
+		
+	8.5 Actions
+		Fill password field with 10 unusual symbols
+		Fill verify password field with the same 10 unusual symbols as password field
+		Fill security hint field with 10 unusual symbols
+		Press "Register button"
+	Result 
+		"Account successfully created" toast message appear	
+	
+9) Purpose
+		Test show me password check box functionality
+		
+	9.1 Actions
+		Enter "12345" in password edit text and verify password edit text
+		Check "Show me password" check box
+	Result 
+		Entered digits appears in both password and verify password edittexts
+		
+	9.2 Actions
+		Check "Show me password" check box
+	Result
+		Dots appears in both password and verify password edittexts
+
+		

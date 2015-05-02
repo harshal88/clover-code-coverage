@@ -1,0 +1,4 @@
+Purpose 
+Check static properties of Compass fragment objects.
+1) Check, that Heading text are exist and it correspondence is correct;
+2) Check, that Compass ImageView is exist.

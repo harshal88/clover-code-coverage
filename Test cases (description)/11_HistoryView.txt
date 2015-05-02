@@ -1,0 +1,30 @@
+Purpose 
+Check, that History (ListTracks) module is working correctly
+
+1. Check that saved trip can be opened
+1.1 Actions
+- Click on line 2 of TrackList;
+Result
+- ShowMapActivity must open;
+- Map must exist
+
+2. Check that saved trip can be deleted
+2.1 Actions
+- Long Click on line 2 of TrackList;
+Result
+- Context Menu must open;
+2.2 Actions
+- Click on text "Delete the record"
+Result
+- Alert Dialog must open;
+2.3 Actions
+- Press "NO";
+Result
+- List elements count should be the same as before;
+2.4 Actions
+- Long Click on line 2 of TrackList;
+- Click on text "Delete the record"
+- Press "YES";
+Result
+- Toast message with "Record is deleted" correspondence
+- List elements count should reduce for 1;

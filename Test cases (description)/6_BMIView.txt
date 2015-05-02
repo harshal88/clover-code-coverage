@@ -1,0 +1,90 @@
+1. Static Tests
+Purpose 
+Check static properties of  BMI fragment objects objects.
+
+1.1 Check, that all objects  (3 TextViews, 3 EditTexts, 2 Spinner, 3 Buttons ) in BMI fragment are exist;
+
+1.2 Check, that all Buttons are clickable.
+
+2. Normal mode Tests
+Purpose 
+Check, how BMI fragment working in normal mode.
+
+2.1. Check, that "Calculate BMI" functionality is working correctly.
+Actions
+- Enter "90" in Weight EditText;
+- Enter "1.8" in Height EditText;
+- Click on "Calculate BMI" Button;
+- Check Result EditText.
+Result
+- Result EditText must contain "27.78"
+
+2.2. Check, that "Calculate BMI" functionality is working correctly with different settings.
+Actions
+- Enter "90" in Weight EditText;
+- Enter "1.8" in Height EditText;
+- Change Weight Spinner two "Lbs"
+- Change Height Spinner two "Ft"
+- Click on "Calculate BMI" Button;
+- Check Result EditText.
+Result
+- Result EditText must contain "135.62"
+
+2.2. Check that "Ideal Weight" functionality is working correctly.
+Actions
+- Enter "65" in Weight EditText;
+- Enter "1.8" in Height EditText;
+- Click on "Ideal Weight" Button;
+- Check Result EditText.
+Result
+- Result EditText must contain "59.62kg"
+
+2.3. Check that "Clear" functionality is working correctly
+Actions
+- Enter "90" in Weight EditText;
+- Enter "1.8" in Height EditText;
+- Click on "Clear" Button;
+- Check Weight and Height EditTexts.
+Result
+- Weight and Height EditTexts must be empty
+
+
+3. Unusual mode Tests
+Purpose 
+Check, how BMI fragment working in unusual mode.
+
+3.1. Check, that empty fields toasts are showing correctly
+Actions
+- Enter "65" in Weight EditText;
+- Click on "Calculate BMI" Button;
+- Waiting for Toast message;
+Result
+- Toast message with "You have not entered a value for the height field" correspondence
+Actions
+- Click on "Clear" Button;
+- Enter "1.8" in Height EditText;
+- Click on "Ideal Weight" Button;
+- Waiting for Toast message;
+Result
+- Toast message with "You have not entered a value for the Weight field" correspondence
+
+3.2. Check that "0" fields toasts are showing correctly
+Actions
+- Enter "0" in Weight EditText;
+- Enter "1.5" in Height EditText;
+- Click on "Calculate BMI" Button;
+- Waiting for Toast message;
+Result
+- Toast message with "You have specified an incorrect weight. Weight must be more that 1" correspondence
+Actions
+- Enter "70" in Weight EditText;
+- Enter "0" in Height EditText;
+- Click on "Calculate BMI" Button;
+- Waiting for Toast message;
+Result
+- Toast message with "You have specified an incorrect height. Height must be more that 1" correspondence
+
+---Notes and Advice---
+1. Minimal weight must be grater than "1" (at least "30");
+2. Must be maximal weight and height;
+2. Grammatical error in "Weight must be more that 1" and "Height must be more that 1" toasts in word "that" ("than" correct);

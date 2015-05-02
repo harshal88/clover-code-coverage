@@ -1,0 +1,69 @@
+Purpose 
+Check, that NewTrip module is working correctly
+
+1. Check that all objects in RecordingActivity are exist
+1.1 Actions
+- Open RecordingActivity;
+- Check, that all objects are not equal "null"
+Result
+- All objects must be "not null" 
+
+2. Check that all objects in NewTrip module are working correctly
+2.1 Actions
+- Open RecordingActivity;
+- Press Show(Hide)Map button;
+- Wait for 1 seconds;
+Result
+- Map Visible must equal GONE
+2.2 Actions
+- Press Show(Hide)Map button;
+- Wait for 1 seconds;
+Result
+- Map Visible must equal VISIBLE
+2.3 Actions
+- Press Pause button;
+Result
+- Toast message with "Recording paused; GPS now offline" correspondence
+2.4 Actions
+- Press Pause button;
+Result
+- Toast message with "GPS restarted. It may take a moment to resync." correspondence
+2.5 Actions
+- Press Finish button;
+- Check, that all objects are not equal "null"
+Result
+- All objects must be "not null" 
+2.6 Actions
+- Check, that all objects in SavingActivity are not equal "null", have correct labels and description
+Result
+- All objects must be "not null", have correct labels and description 
+2.7 Actions
+- Set text to "New trip" NoteEditText
+- Press Submit button;
+Result
+- ShowMapActivity must open
+
+3. Check that Discard Saving Trip functionality are working correctly
+3.1 Actions
+- Open RecordingActivity;
+- Wait for  20 seconds;
+- Press Finish button;
+- Press Discard button;
+Result
+- Toast message with "Trip discarded."correspondence
+- StartActivity must open
+
+4. Test usual mode lifecycle
+4.1 Actions
+- Open RecordingActivity;
+- Wait for  20 seconds;
+- Press Finish button;
+- Press Social ToggleButton
+Result
+- Social ToggleButton must have correct label and description
+4.2 Actions
+- Set text to "New trip" NoteEditText
+- Press Submit button;
+- Press "Back"
+Result
+- StartActivity must open

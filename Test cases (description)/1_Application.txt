@@ -1,0 +1,6 @@
+1) Check app min SDK version
+2) Check app target SDK version
+3) Check app title correspondence
+4) Check network permissions
+5) Check GPS\Location permissions
+6) Check that app does not use other permissions
